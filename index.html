@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Profesional: Menjembatani Analisis Data, Model Peramalan (Forecasting), dan Pengembangan Aplikasi Web Interaktif berkinerja tinggi.">
+  <meta name="keywords" content="Data Analyst, Forecasting, Time Series, Web Developer, Prophet, Python, Chart.js, Business Intelligence, Dashboard">
+  <meta name="author" content="Data & Web Specialist">
+  
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:title" content="Data Analyst, Forecasting & Web Specialist | Portfolio">
+  <meta property="og:description" content="Mengubah data mentah dan model prediksi menjadi produk web interaktif bernilai bisnis tinggi.">
+  <meta property="og:type" content="website">
+
+  <title>Data Analyst, Forecasting & Web Specialist | Portofolio</title>
+
+  <!-- Typography: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Chart.js for High Performance Interactive Visualizations -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Grid Background Matrix -->
+  <div class="bg-grid-pattern" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar" id="mainNavbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Beranda Portofolio">
+        <div class="nav-brand-icon">
+          <!-- Trending Up & Code Icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+            <polyline points="16 7 22 7 22 13"></polyline>
+          </svg>
+        </div>
+        <span>Data<span style="color: var(--accent-cyan);">&</span>Web</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" aria-label="Navigasi Utama">
+        <a href="#hero" class="nav-link active">Beranda</a>
+        <a href="#pillars" class="nav-link">Keahlian</a>
+        <a href="#sandbox" class="nav-link">Simulasi Live</a>
+        <a href="#projects" class="nav-link">Proyek</a>
+        <a href="#skills" class="nav-link">Tech Stack</a>
+        <a href="#process" class="nav-link">Alur Kerja</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+      </nav>
+
+      <!-- Status & CTA -->
+      <div class="nav-actions">
+        <div class="status-pill" title="Status ketersediaan proyek baru">
+          <span class="pulse-dot"></span>
+          <span>Siap untuk Proyek Baru</span>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-sm">Hubungi Saya</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="nav-mobile-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu-drawer hidden" id="mobileDrawer">
+      <a href="#hero" class="nav-link">Beranda</a>
+      <a href="#pillars" class="nav-link">Keahlian Utama</a>
+      <a href="#sandbox" class="nav-link">Simulasi Live</a>
+      <a href="#projects" class="nav-link">Proyek Unggulan</a>
+      <a href="#skills" class="nav-link">Tech Stack</a>
+      <a href="#process" class="nav-link">Alur Kerja</a>
+      <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section class="section hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Narrative & Hero Value -->
+          <div class="hero-content-col">
+            <div class="hero-badge-wrap">
+              <span class="hero-triad-badge">
+                <span class="highlight">Data Analytics</span>
+                <span class="separator">✕</span>
+                <span class="highlight">Forecasting</span>
+                <span class="separator">✕</span>
+                <span class="highlight">Web Engineering</span>
+              </span>
+            </div>
+
+            <h1 class="hero-title">
+              Mengubah Data & Model Prediksi Menjadi <span class="gradient-text">Aplikasi Web Interaktif</span>
+            </h1>
+
+            <p class="hero-description">
+              Menjembatani analisis statistik mendalam, model peramalan *time-series*, dan pengembangan antarmuka web modern untuk menghasilkan keputusan bisnis yang cepat dan akurat.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#sandbox" class="btn btn-primary">
+                <!-- Play Icon -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                Coba Simulator Live
+              </a>
+              <a href="#projects" class="btn btn-secondary">
+                Lihat Studi Kasus
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Quick Metrics Row -->
+            <div class="hero-metrics">
+              <div class="metric-item">
+                <div class="metric-val">94.8<span class="symbol">%</span></div>
+                <div class="metric-label">Rata-rata Akurasi Model</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-val">100<span class="symbol">%</span></div>
+                <div class="metric-label">Web Responsif & Realtime</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-val">3-in-1<span class="symbol"></span></div>
+                <div class="metric-label">Integrasi Disiplin Ilmu</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Live Forecasting Preview Widget -->
+          <div class="hero-widget-col">
+            <div class="hero-dashboard-preview">
+              <!-- Window Top Bar -->
+              <div class="preview-top-bar">
+                <div class="preview-window-controls">
+                  <div class="preview-dot dot-red"></div>
+                  <div class="preview-dot dot-yellow"></div>
+                  <div class="preview-dot dot-green"></div>
+                </div>
+                <div class="preview-title">
+                  <span>live_forecaster.py / web_view</span>
+                </div>
+                <div class="live-badge">
+                  <span class="pulse-dot"></span> LIVE
+                </div>
+              </div>
+
+              <!-- Interactive Switcher -->
+              <div class="forecast-controller">
+                <div class="select-group">
+                  <label for="heroDatasetSelect">Dataset:</label>
+                  <select id="heroDatasetSelect" class="forecast-select" aria-label="Pilih Dataset">
+                    <option value="retail">Retail Sales Demand</option>
+                    <option value="server">API Traffic (RPS)</option>
+                    <option value="energy">Power Grid Load (MW)</option>
+                  </select>
+                </div>
+                <div class="select-group">
+                  <label for="heroModelSelect">Model:</label>
+                  <select id="heroModelSelect" class="forecast-select" aria-label="Pilih Model Prediksi">
+                    <option value="prophet">FB Prophet (Seasonal)</option>
+                    <option value="sarima">SARIMAX (p,d,q)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Live Chart Canvas -->
+              <div class="chart-canvas-container">
+                <canvas id="heroForecastChart"></canvas>
+              </div>
+
+              <!-- Live KPI Diagnostics -->
+              <div class="preview-stats-row">
+                <div class="stat-chip">
+                  <div class="chip-label">Akurasi (MAPE)</div>
+                  <div class="chip-value positive" id="heroMape">94.8%</div>
+                </div>
+                <div class="stat-chip">
+                  <div class="chip-label">Tren Proyeksi</div>
+                  <div class="chip-value cyan" id="heroTrend">+23.5%</div>
+                </div>
+                <div class="stat-chip">
+                  <div class="chip-label">Model RMSE</div>
+                  <div class="chip-value" id="heroRmse">0.041</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         THE THREE PILLARS (VALUE PROPOSITION)
+         ========================================================================== -->
+    <section class="section" id="pillars">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Irisan Kemampuan</span>
+          <h2 class="section-title">Kombinasi 3 Pilar Utama</h2>
+          <p class="section-desc">
+            Bukan sekadar visualisasi statis atau analisis di atas kertas. Saya menghadirkan solusi menyeluruh dari data mentah hingga aplikasi web interaktif.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1: Data Analytics -->
+          <div class="pillar-card pillar-data">
+            <div class="pillar-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="pillar-title">1. Data Analytics & Insights</h3>
+            <p class="pillar-desc">
+              Eksplorasi data komprehensif (EDA), pembersihan anomali, query SQL kompleks, perancangan metrik bisnis (KPI), dan penggalian pola tersembunyi untuk pengambilan keputusan berbasis fakta.
+            </p>
+            <div class="pillar-tags">
+              <span class="pillar-tag">SQL & Data Warehouse</span>
+              <span class="pillar-tag">Pandas & NumPy</span>
+              <span class="pillar-tag">EDA & Cleaning</span>
+              <span class="pillar-tag">KPI Diagnostics</span>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Forecasting & Modeling -->
+          <div class="pillar-card pillar-forecast">
+            <div class="pillar-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="pillar-title">2. Time-Series Forecasting</h3>
+            <p class="pillar-desc">
+              Membangun model peramalan prediktif untuk memprediksi tren masa depan. Mengidentifikasi pola musiman (*seasonality*), siklus bisnis, dan interval keyakinan (*confidence intervals*) secara statistik.
+            </p>
+            <div class="pillar-tags">
+              <span class="pillar-tag">ARIMA / SARIMAX</span>
+              <span class="pillar-tag">Facebook Prophet</span>
+              <span class="pillar-tag">Trend Decomposition</span>
+              <span class="pillar-tag">Evaluation (MAPE/RMSE)</span>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Web Engineering -->
+          <div class="pillar-card pillar-web">
+            <div class="pillar-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="pillar-title">3. Web Application & UI</h3>
+            <p class="pillar-desc">
+              Membungkus model dan metrik analitik ke dalam aplikasi web yang responsif, cepat, dan mudah dipahami oleh eksekutif maupun operasional bisnis tanpa memerlukan instalasi software statistik rumit.
+            </p>
+            <div class="pillar-tags">
+              <span class="pillar-tag">HTML5 & Modern CSS</span>
+              <span class="pillar-tag">JavaScript (ES6+)</span>
+              <span class="pillar-tag">Chart.js / Canvas</span>
+              <span class="pillar-tag">RESTful API Integration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE LIVE FORECASTING SIMULATOR / PLAYGROUND
+         ========================================================================== -->
+    <section class="section" id="sandbox" style="background: linear-gradient(180deg, transparent 0%, rgba(13, 18, 29, 0.5) 100%);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Eksplorasi Interaktif</span>
+          <h2 class="section-title">Live Forecasting Sandbox</h2>
+          <p class="section-desc">
+            Uji coba simulasi model peramalan secara langsung. Geser parameter di bawah ini dan perhatikan bagaimana kurva proyeksi serta pita interval beradaptasi secara matematis *real-time*.
+          </p>
+        </div>
+
+        <div class="simulator-box">
+          <div class="simulator-grid">
+            <!-- Controls Column -->
+            <div class="simulator-controls">
+              <!-- Parameter 1: Trend Slope -->
+              <div class="sim-control-group">
+                <div class="sim-label-row">
+                  <span>Pertumbuhan Tren (Slope)</span>
+                  <span class="sim-val-badge" id="simTrendVal">+1.5</span>
+                </div>
+                <input type="range" id="simTrend" class="sim-slider" min="-3" max="5" step="0.5" value="1.5" aria-label="Pertumbuhan Tren">
+              </div>
+
+              <!-- Parameter 2: Seasonality Amplitude -->
+              <div class="sim-control-group">
+                <div class="sim-label-row">
+                  <span>Amplitudo Musiman (Cycle)</span>
+                  <span class="sim-val-badge" id="simSeasonVal">1.2x</span>
+                </div>
+                <input type="range" id="simSeason" class="sim-slider" min="0" max="3" step="0.2" value="1.2" aria-label="Amplitudo Musiman">
+              </div>
+
+              <!-- Parameter 3: Noise / Volatility -->
+              <div class="sim-control-group">
+                <div class="sim-label-row">
+                  <span>Volatilitas / Noise Data</span>
+                  <span class="sim-val-badge" id="simNoiseVal">15%</span>
+                </div>
+                <input type="range" id="simNoise" class="sim-slider" min="0" max="40" step="5" value="15" aria-label="Tingkat Noise">
+              </div>
+
+              <!-- Parameter 4: Forecast Horizon -->
+              <div class="sim-control-group">
+                <div class="sim-label-row">
+                  <span>Jangkauan Prediksi (Horizon)</span>
+                  <span class="sim-val-badge" id="simHorizonVal">20 Hari</span>
+                </div>
+                <input type="range" id="simHorizon" class="sim-slider" min="10" max="40" step="5" value="20" aria-label="Jangkauan Prediksi">
+              </div>
+
+              <!-- Model Selector Toggle -->
+              <div class="sim-control-group">
+                <div class="sim-label-row">
+                  <span>Algoritma Proyeksi</span>
+                </div>
+                <div class="sim-model-toggle">
+                  <button type="button" class="toggle-btn active" data-model="prophet">Prophet Decomposition</button>
+                  <button type="button" class="toggle-btn" data-model="arima">SARIMA Autoregressive</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chart Display Column -->
+            <div class="simulator-display">
+              <div class="sim-chart-header">
+                <span style="font-size: 0.88rem; font-weight: 600; color: #cbd5e1;">Simulasi Proyeksi Matematis (40 Hari Historis + Horizon)</span>
+                <div class="sim-legend">
+                  <div class="legend-item">
+                    <span class="legend-line legend-historical"></span>
+                    <span>Data Historis</span>
+                  </div>
+                  <div class="legend-item">
+                    <span class="legend-line legend-forecast"></span>
+                    <span>Hasil Forecast</span>
+                  </div>
+                  <div class="legend-item">
+                    <span class="legend-line legend-band"></span>
+                    <span>95% Confidence Band</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sim-canvas-container">
+                <canvas id="sandboxChart"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS / CASE STUDIES
+         ========================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portofolio Karya</span>
+          <h2 class="section-title">Studi Kasus & Proyek Unggulan</h2>
+          <p class="section-desc">
+            Koleksi proyek nyata yang menggabungkan analisis data mendalam, model peramalan akurat, dan antarmuka web interaktif.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">Semua Proyek</button>
+          <button class="filter-btn" data-filter="forecasting">Forecasting & AI</button>
+          <button class="filter-btn" data-filter="analytics">Data Analytics</button>
+          <button class="filter-btn" data-filter="web">Web Application</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          <!-- Project 1: OmniForecast BI -->
+          <div class="project-card" data-category="forecasting web">
+            <div class="project-thumbnail">
+              <img src="assets/images/project-prophet.jpg" alt="OmniForecast BI Inventory Platform" loading="lazy">
+              <span class="project-overlay-badge">Forecasting + Web</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">OmniForecast BI — Retail Inventory Platform</h3>
+              <p class="project-summary">
+                Platform web peramalan inventaris retail berbasis AI yang memprediksi lonjakan permintaan produk dan otomatis mengoptimalkan alokasi stok gudang.
+              </p>
+              <div class="project-highlights-list">
+                <div class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Akurasi peramalan 94.2% dengan Facebook Prophet & penyesuaian liburan.</span>
+                </div>
+                <div class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Mengurangi kasus kehabisan stok (*stockout*) hingga 34%.</span>
+                </div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python (Prophet)</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">Vanilla JS</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" data-open-modal="prophet">Pelajari Studi Kasus</button>
+                <a href="#sandbox" class="btn btn-secondary btn-sm">Lihat Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: FinPulse Time-Series & Anomaly Detection -->
+          <div class="project-card" data-category="analytics web">
+            <div class="project-thumbnail">
+              <img src="assets/images/project-financial.jpg" alt="FinPulse Market Analytics Web App" loading="lazy">
+              <span class="project-overlay-badge">Data Analytics + Web</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">FinPulse — Time Series & Anomaly Engine</h3>
+              <p class="project-summary">
+                Aplikasi web analitik pasar finansial waktu nyata (*real-time*) yang memproses data harga dan mendeteksi anomali volatilitas dengan algoritma Z-score dinamis.
+              </p>
+              <div class="project-highlights-list">
+                <div class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Analisis lonjakan anomali sub-detik (<120ms latensi peringatan).</span>
+                </div>
+                <div class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Heatmap 30-hari interaktif untuk pemetaan klaster risiko.</span>
+                </div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Time Series EDA</span>
+                <span class="tech-tag">WebSockets</span>
+                <span class="tech-tag">Statsmodels</span>
+                <span class="tech-tag">Modern Glassmorphism UI</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" data-open-modal="financial">Pelajari Studi Kasus</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: GridFuse IoT Energy Forecaster -->
+          <div class="project-card" data-category="forecasting web">
+            <div class="project-thumbnail">
+              <img src="assets/images/project-energy.jpg" alt="GridFuse IoT Power Forecast Web App" loading="lazy">
+              <span class="project-overlay-badge">IoT + Forecasting</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">GridFuse IoT — 24-Hour Energy Forecaster</h3>
+              <p class="project-summary">
+                Dashboard web prediktif untuk transmisi energi cerdas, meramalkan beban konsumsi listrik regional dan mengimbangi fluktuasi suplai tenaga surya & angin.
+              </p>
+              <div class="project-highlights-list">
+                <div class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Presisi beban puncak 96.1% melalui integrasi variabel cuaca eksternal.</span>
+                </div>
+                <div class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Visualisasi interaktif 24 jam ke depan dengan estimasi kontribusi energi terbarukan.</span>
+                </div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">SARIMAX Multivariat</span>
+                <span class="tech-tag">Weather API</span>
+                <span class="tech-tag">Data Streaming</span>
+                <span class="tech-tag">HTML5 Canvas</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" data-open-modal="energy">Pelajari Studi Kasus</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: SaaS Runway & Churn Simulator -->
+          <div class="project-card" data-category="analytics web">
+            <div class="project-thumbnail">
+              <img src="assets/images/project-prophet.jpg" alt="SaaS Runway Simulator" loading="lazy">
+              <span class="project-overlay-badge">Analytics Simulation</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">SaaS Runway & Churn Predictor</h3>
+              <p class="project-summary">
+                Aplikasi simulasi keuangan interaktif untuk eksekutif startup dalam memodelkan *churn rate*, ekspansi MRR, dan *cash runway* dalam berbagai skenario pasar.
+              </p>
+              <div class="project-highlights-list">
+                <div class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Perhitungan Monte Carlo instan di sisi peramban (*client-side*).</span>
+                </div>
+                <div class="project-highlight-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Parameter interaktif dengan slider dan ekspor laporan PDF terstruktur.</span>
+                </div>
+              </div>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Cohort Analysis</span>
+                <span class="tech-tag">Monte Carlo</span>
+                <span class="tech-tag">JavaScript Math</span>
+                <span class="tech-tag">CSS Flex/Grid</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" data-open-modal="churn">Pelajari Studi Kasus</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS & TECH STACK MATRIX
+         ========================================================================== -->
+    <section class="section" id="skills" style="background: rgba(13, 18, 29, 0.4);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Keahlian Teknis</span>
+          <h2 class="section-title">Tech Stack & Matriks Kemampuan</h2>
+          <p class="section-desc">
+            Penguasaan alat dan teknologi untuk mengolah data, melatih model prediktif, dan menyajikannya dalam antarmuka web modern.
+          </p>
+        </div>
+
+        <div class="skills-wrapper">
+          <!-- Category 1: Data Analytics -->
+          <div class="skill-category-card cat-data">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Data Analytics & SQL</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">SQL (PostgreSQL, MySQL)</span>
+                  <span class="skill-level-text">Tingkat Lanjut</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill fill-cyan" style="width: 95%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python (Pandas, NumPy)</span>
+                  <span class="skill-level-text">Tingkat Lanjut</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill fill-cyan" style="width: 92%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Exploratory Data Analysis (EDA)</span>
+                  <span class="skill-level-text">Mahir</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill fill-cyan" style="width: 94%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Data Cleaning & Wrangling</span>
+                  <span class="skill-level-text">Mahir</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill fill-cyan" style="width: 90%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Forecasting & Modeling -->
+          <div class="skill-category-card cat-forecast">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Forecasting & Time Series</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Facebook Prophet</span>
+                  <span class="skill-level-text">Tingkat Lanjut</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill fill-purple" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">ARIMA / SARIMAX Modeling</span>
+                  <span class="skill-level-text">Mahir</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill fill-purple" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Dekomposisi Tren & Musiman</span>
+                  <span class="skill-level-text">Mahir</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill fill-purple" style="width: 92%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Evaluasi Model (MAPE, RMSE, MAE)</span>
+                  <span class="skill-level-text">Tingkat Lanjut</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill fill-purple" style="width: 95%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Web Engineering -->
+          <div class="skill-category-card cat-web">
+            <div class="category-header">
+              <div class="category-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Web Development & UI</h3>
+            </div>
+            <div class="skill-items-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Modern HTML5 & Semantic Web</span>
+                  <span class="skill-level-text">Tingkat Lanjut</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill fill-emerald" style="width: 96%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Vanilla CSS & Glassmorphism</span>
+                  <span class="skill-level-text">Tingkat Lanjut</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill fill-emerald" style="width: 94%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript (ES6+) & DOM APIs</span>
+                  <span class="skill-level-text">Mahir</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill fill-emerald" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Chart.js & Data Visualizations</span>
+                  <span class="skill-level-text">Mahir</span>
+                </div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill fill-emerald" style="width: 92%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         METHODOLOGY / PROCESS TIMELINE
+         ========================================================================== -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Metodologi Kerja</span>
+          <h2 class="section-title">Bagaimana Saya Mengeksekusi Proyek</h2>
+          <p class="section-desc">
+            Pendekatan terstruktur 4 fase dari pemahaman masalah bisnis hingga penyebaran aplikasi web yang siap pakai.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="process-num">01</div>
+            <h3 class="process-title">Eksplorasi & Pembersihan</h3>
+            <p class="process-desc">
+              Mengumpulkan data mentah, membersihkan nilai yang hilang (*missing values*), mendeteksi anomali (*outliers*), dan memvalidasi keandalan data.
+            </p>
+          </div>
+          <div class="process-card">
+            <div class="process-num">02</div>
+            <h3 class="process-title">Modeling & Validasi</h3>
+            <p class="process-desc">
+              Melatih model deret waktu (ARIMA, Prophet), memisahkan set pelatihan/pengujian, menguji akurasi (MAPE), dan mengkalibrasi parameter musiman.
+            </p>
+          </div>
+          <div class="process-card">
+            <div class="process-num">03</div>
+            <h3 class="process-title">Arsitektur UI & Web</h3>
+            <p class="process-desc">
+              Merancang antarmuka web interaktif yang intuitif, menyematkan visualisasi data grafik responsif, dan menyusun filter kontrol yang mudah digunakan.
+            </p>
+          </div>
+          <div class="process-card">
+            <div class="process-num">04</div>
+            <h3 class="process-title">Deploy & Otomasi</h3>
+            <p class="process-desc">
+              Menerapkan web ke hosting berkinerja tinggi, menghubungkan alur pembaruan data otomatis, dan memastikan akses cepat di desktop maupun smartphone.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT ME / PHILOSOPHY
+         ========================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-card-visual">
+            <div class="about-badge-cluster">
+              <div class="about-feature-box">
+                <div class="about-feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 14 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="about-feature-title">Analisis Masa Depan (Predictive)</h4>
+                  <p class="about-feature-desc">Fokus tidak hanya pada apa yang sudah terjadi, tapi apa yang kemungkinan besar akan terjadi.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-box">
+                <div class="about-feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="about-feature-title">Aksesibilitas Tanpa Batas</h4>
+                  <p class="about-feature-desc">Hasil analisis disajikan via browser, bisa diakses kapan saja tanpa perlu membuka Jupyter Notebook.</p>
+                </div>
+              </div>
+
+              <div class="about-feature-box">
+                <div class="about-feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="about-feature-title">Performa Ringan & Cepat</h4>
+                  <p class="about-feature-desc">Kode web bersih tanpa dependensi membengkak, menjamin rendering cepat dan responsivitas instan.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text-content">
+            <span class="section-tag">Filosofi Kerja</span>
+            <h2 class="section-title" style="text-align: left; margin-bottom: 1.25rem;">
+              Menghubungkan Wawasan Data dengan Kenyamanan Pengguna
+            </h2>
+            <p class="about-bio-text">
+              Banyak perusahaan kesulitan memanfaatkan data mereka karena analis dan pengembang perangkat lunak berbicara dalam bahasa yang berbeda. Analis memproduksi model di notebook terisolasi, sementara tim web sibuk membangun tata letak tanpa memahami cara mengekspresikan variabel statistik.
+            </p>
+            <p class="about-bio-text">
+              Di sinilah peran saya hadir: menyatukan logika statistik, algoritma peramalan deret waktu, dan rekayasa antarmuka web modern agar data menjadi aset hidup yang dapat langsung dimanfaatkan untuk memenangkan pasar.
+            </p>
+            <div class="about-highlights">
+              <div class="about-highlight-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <span>Berorientasi pada dampak bisnis nyata (ROI, efisiensi modal, pengurangan limbah stok)</span>
+              </div>
+              <div class="about-highlight-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <span>Desain antarmuka yang bersih, mudah dipahami, dan ramah pengguna non-teknis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section class="section" id="contact" style="background: linear-gradient(180deg, rgba(13, 18, 29, 0.4) 0%, #05070a 100%);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Mari Berkolaborasi</span>
+          <h2 class="section-title">Punya Proyek Data atau Web?</h2>
+          <p class="section-desc">
+            Saya terbuka untuk proyek peramalan bisnis, pembuatan dashboard interaktif, maupun kesempatan kerja sama lainnya.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Contact Details -->
+          <div class="contact-info-panel">
+            <a href="mailto:contact@dataprecision.io" class="contact-card-link">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <div class="label">Email Resmi</div>
+                <div class="value">contact@dataprecision.io</div>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <div class="label">Jaringan Profesional</div>
+                <div class="value">LinkedIn Profile</div>
+              </div>
+            </a>
+
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+              <div class="contact-icon-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </div>
+              <div class="contact-details">
+                <div class="label">Repositori Kode</div>
+                <div class="value">github.com/data-web-pro</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-panel">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="senderName" class="form-label">Nama Lengkap</label>
+                <input type="text" id="senderName" class="form-input" placeholder="Misal: Budi Pratama" required>
+              </div>
+              <div class="form-group">
+                <label for="senderEmail" class="form-label">Alamat Email</label>
+                <input type="email" id="senderEmail" class="form-input" placeholder="nama@perusahaan.com" required>
+              </div>
+              <div class="form-group">
+                <label for="senderMessage" class="form-label">Pesan atau Kebutuhan Proyek</label>
+                <textarea id="senderMessage" class="form-textarea" placeholder="Ceritakan tentang data atau aplikasi web yang ingin Anda bangun..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Kirim Pesan
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+              <div id="formFeedback" class="form-feedback" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       CASE STUDY DETAIL MODAL (POPUP)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="caseStudyModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Tutup Detail Studi Kasus">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <img id="modalImage" class="modal-header-image" src="" alt="Case study header preview">
+      <div class="modal-body">
+        <span class="modal-badge" id="modalBadge">Kategori</span>
+        <h3 class="modal-title" id="modalTitle">Judul Proyek</h3>
+        <p class="modal-desc" id="modalSummary" style="font-size: 1.05rem; margin-bottom: 1.5rem;"></p>
+
+        <!-- Dynamic Impact Metrics -->
+        <div class="modal-metrics-grid" id="modalMetrics"></div>
+
+        <h4 class="modal-section-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          Tantangan & Masalah Bisnis
+        </h4>
+        <p class="modal-desc" id="modalProblem"></p>
+
+        <h4 class="modal-section-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          Solusi & Arsitektur yang Dibangun
+        </h4>
+        <p class="modal-desc" id="modalSolution"></p>
+
+        <h4 class="modal-section-title">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          Teknologi yang Digunakan
+        </h4>
+        <div class="project-tech-tags" id="modalTechList" style="margin-top: 0.5rem;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-copy">
+        &copy; 2026 Portofolio Spesialis Data Analytics, Forecasting & Web. Dibangun dengan presisi kode dan visualisasi.
+      </div>
+      <div class="footer-socials">
+        <a href="#hero" class="social-btn" title="Kembali ke atas">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
